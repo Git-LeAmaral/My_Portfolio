@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  backdrop-filter: blur(20px);
+}
+
+header .logo {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+header ul li.active a,
+header ul li:hover a {
+  color: #30fe6c;
+}
+
+#home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  height: 25vw;
+  background: #30fe6c;
+  border-top-right-radius: 25vw;
+  border-top-left-radius: 25vw;
+}
+
+#home .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 650px;
+  z-index: 10;
+}
+
+#hame .content, h2 {
+  position: relative;
+  font-size: 5rem;
+  color: #30fe6c;
+}
+
+#hame .content, p {
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  font-size: 1.25rem;
+  max-width: 200px;
+  background: #30fe6c;
+  color: #222;
+  text-align: center;
+  padding: 18px 30px;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#home .profile {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  max-height: 90vh;
+}
+
+#courses,
+#portfolio,
+#conatact {
+  position: relative;
+  background: #34353a;
+  min-height: 100vh;
+  padding: 120px 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.secText {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.secText h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.secText p {
+  max-width: 700px;
+  text-align: center;
+  color: #aaa;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+#courses, .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 40px 0;
+}
+
+#courses .content .servicesBx {
+  background: #2e2f34;
+  padding: 50px 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #2e2f34;
+}
+
+#courses .content .servicesBx:hover {
+  border: 2px solid #30fe6c;
+}
+
+#courses .content .servicesBx img {
+  max-width: 100px;
+  filter: invert(1);
+  opacity: 0.4;
+  transition: .5s;
+}
+
+#courses .content .servicesBx:hover img {
+  opacity: 1;
+}
+
+#courses .content .servicesBx h3 {
+  color: #30fe6c;
+  font-weight: 500;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+#portfolio {
+  background: #2e2f34;
+  text-align: center;
+}
+
+#portfolio .content{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+#portfolio .content.imgBx {
+  position: relative;
+}
+
+#portfolio .content .imgBx img {
+  max-width: 100%;
+  
+}
